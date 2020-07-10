@@ -8,8 +8,8 @@
     <style>
         html,
         body {
-            height: 400px;
-            width: 360px;
+            height: 450px;
+            width: 355px;
         }
     </style>
 </head>
@@ -30,13 +30,12 @@
                         <input type="text" class="form-control mb-2" id="wordInput" placeholder="Enter word">
                     </div>
                     <div class="col-auto">
-                        <button type="submit" class="btn btn-outline-primary mb-2 btn-sm" id="replace-button">Replace!</button>
+                        <button type="submit" class="btn btn-outline-primary mb-2 btn-sm"
+                            id="replace-button">Replace!</button>
                     </div>
                 </div>
             </form>
-        <!-- </div>
-        <div class="card-body"> -->
-            <hr/>
+            <hr />
             <h6 class="card-title">Or click below to autogenerate positive words!</h6>
             <form>
                 <div class="text-center">
@@ -46,14 +45,14 @@
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
-                <form class="text-left text-muted" style="font-size: small; padding-left: 40px;">
-                    <input type="checkbox" class="form-check-input" id="enabled-checkbox" checked>
-                    <label class="form-check-label" for="enabled-checkbox">Enabled?</label>
+                <form class="text-center">
+                    <button type="submit" id="reset-button" class="btn btn-outline-danger">Reset</button>
                 </form>
             </li>
         </ul>
         <div class="card-footer text-muted" style="font-size: small; font-style: italic;">
-            Check out the repo for this project <a href="https://github.com/s-daugherty/cancelCorona" target="_blank">here.</a>
+            Check out the repo for this project <a href="https://github.com/s-daugherty/cancelCorona"
+                target="_blank">here.</a>
         </div>
     </div>
     <script src="popup.js"></script>

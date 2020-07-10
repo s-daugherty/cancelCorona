@@ -2,7 +2,7 @@
 chrome.storage.local.get(['textInput'], function(result) {
     var elements = document.getElementsByTagName('*');
     var s = result.textInput;
-    if (s !== "") {
+    if (s !== "" && typeof s !== "undefined") {
         for (var i = 0; i < elements.length; i++) {
             var element = elements[i];
         
@@ -26,4 +26,9 @@ chrome.storage.local.get(['textInput'], function(result) {
     }    
 });
 
-
+let images = document.getElementsByTagName('img');
+for(let i = 0; i < images.length; i++){
+  chrome.runtime.sendMessage({msg: 'image', index: i}, function({data, index}){
+    images[index].src = data.link;
+  });
+}
