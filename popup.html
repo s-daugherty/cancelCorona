@@ -9,14 +9,19 @@
         html,
         body {
             height: 400px;
-            width: 375px;
+            width: 360px;
         }
     </style>
 </head>
 
 <body>
-    <div class="card text-center">
-        <div class="card-header">Rewind 2020</div>
+    <div class="card text-center" style="height: 100%;">
+        <div class="card-header">
+            <div class="card-title">Rewind 2020 </div>
+            <div class="text-muted card-subtitle" style="font-size: small; font-style: italic;">
+                Taking you back to simpler times
+            </div>
+        </div>
         <div class="card-body">
             <h6 class="card-title">Enter word to replace 'Coronavirus':</h6>
             <form class="form-inline justify-content-center">
@@ -25,13 +30,13 @@
                         <input type="text" class="form-control mb-2" id="wordInput" placeholder="Enter word">
                     </div>
                     <div class="col-auto">
-                        <button type="submit" class="btn btn-outline-primary mb-2 btn-sm">Replace!</button>
+                        <button type="submit" class="btn btn-outline-primary mb-2 btn-sm" id="replace-button">Replace!</button>
                     </div>
                 </div>
             </form>
-        </div>
-        <hr/>
-        <div class="card-body">
+        <!-- </div>
+        <div class="card-body"> -->
+            <hr/>
             <h6 class="card-title">Or click below to autogenerate positive words!</h6>
             <form>
                 <div class="text-center">
@@ -39,17 +44,19 @@
                 </div>
             </form>
         </div>
-        <hr/>
-        <div class="card-body text-left">
-            <form style="padding-left: 40px;">
-                <input type="checkbox" class="form-check-input" id="enabled-checkbox" checked>
-                <label class="form-check-label" for="enabled-checkbox">Enabled?</label>
-            </form>
-        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <form class="text-left text-muted" style="font-size: small; padding-left: 40px;">
+                    <input type="checkbox" class="form-check-input" id="enabled-checkbox" checked>
+                    <label class="form-check-label" for="enabled-checkbox">Enabled?</label>
+                </form>
+            </li>
+        </ul>
         <div class="card-footer text-muted" style="font-size: small; font-style: italic;">
             Check out the repo for this project <a href="https://github.com/s-daugherty/cancelCorona">here.</a>
         </div>
     </div>
+    <script src="popup.js"></script>
 </body>
 
 </html>
