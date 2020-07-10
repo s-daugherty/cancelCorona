@@ -15,6 +15,7 @@ chrome.storage.local.get(['textInput'], function(result) {
                     var replacedText = replacedText.replace(/covid-19/gi, s);
                     var replacedText = replacedText.replace(/Coronavirus/gi, s);
                     var replacedText = replacedText.replace(/Covid-19/gi, s);
+                    var replacedText = replacedText.replace(/COVID-19/gi, s);
         
                     if (replacedText !== text) {
                         element.replaceChild(document.createTextNode(replacedText), node);
