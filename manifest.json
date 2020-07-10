@@ -4,6 +4,16 @@
     "name": "Rewind 2020",
     "description": "Extension to replace instances of coronavirus/covid with user specified word!",
     "version": "1.0",
+    "permissions": [
+        "storage",
+        "tabs",
+        "notifications",
+        "http://*/",
+        "https://*/"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
     "content_scripts": [
         {
             "matches": [
