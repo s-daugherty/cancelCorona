@@ -3,7 +3,7 @@ chrome.storage.local.get(['textQuery'], function (result) {
     // console.log("txtQ",result.textQuery);
     if (result.textQuery.isRandom) {
         // You can add more words here
-        var dictionary = ["pikachu","puppies","Jack Little", "Sunshine", "Reduction in Pollution", "kittens"];
+        var dictionary = ["pikachu","puppies", "Sunshine", "Reduction in Pollution", "kittens"];
         for (var i = 0; i < elements.length; i++) {
             var element = elements[i];
 
